@@ -29,7 +29,6 @@ export default class MercadoLivrePage extends BaseElements {
   }
 
   async validarTituloProdutoVisivel(): Promise<void> {
-    // Valida o título na página do produto
     await expect(this.page.locator('h1.ui-label-builder')).toBeVisible({ timeout: 3000 });
   }
 
