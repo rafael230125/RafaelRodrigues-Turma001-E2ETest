@@ -29,10 +29,11 @@ export default class MercadoLivrePage extends BaseElements {
   }
 
   async validarTituloProdutoVisivel(): Promise<void> {
+
     await expect(this.page.locator('h1.ui-label-builder')).toBeVisible({ timeout: 3000 });
   }
 
-  async validarBotaoFavoritos(): Promise<void> {
-    await expect(this.el.getBotaoFavorito()).toBeVisible({ timeout: 3000 });
+  async validarTituloProduto(): Promise<void> {
+    await expect(this.el.getTituloProduto()).toBeVisible({ timeout: 3000 });
   }
 }

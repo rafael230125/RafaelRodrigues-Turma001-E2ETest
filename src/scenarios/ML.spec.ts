@@ -16,6 +16,6 @@ test.describe('Fluxo Mercado Livre', () => {
     await mlPage.validarResultadosVisiveis();
     await mlPage.clicarNoPrimeiroProduto();
     await mlPage.validarTituloProdutoVisivel(); // Adicione esta linha
-    await mlPage.validarBotaoFavoritos();
+    await mlPage.validarTituloProduto();
   });
 });

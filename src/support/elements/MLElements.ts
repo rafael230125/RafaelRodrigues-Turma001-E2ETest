@@ -25,8 +25,10 @@ export default class MercadoLivreElements extends BaseElements {
     return this.page.locator('section.ui-search-results a.ui-search-link').first();
   }
 
-  getBotaoFavorito(): Locator {
-    // Botão de compra na página do produto (pode variar o texto)
-    return this.page.locator('svg.ui-pdp-icon');
+  getTituloProduto(): Locator {
+    return this.page.locator('h1.ui-pdp-title');
   }
+  
+ 
+  
 }
