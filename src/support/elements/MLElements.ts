@@ -26,6 +26,8 @@ export default class MercadoLivreElements extends BaseElements {
   }
 
   getTituloProduto(): Locator {
+
+    //Elemento existe
     return this.page.locator('h1.ui-pdp-title');
   }
   

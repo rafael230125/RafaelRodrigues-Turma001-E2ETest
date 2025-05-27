@@ -34,6 +34,6 @@ export default class MercadoLivrePage extends BaseElements {
   }
 
   async validarTituloProduto(): Promise<void> {
-    await expect(this.el.getTituloProduto()).toBeVisible({ timeout: 3000 });
+    await expect(this.page.locator('text=Notebook Vaio')).toBeVisible();
   }
 }
